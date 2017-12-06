@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Firebase
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +19,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //configures firebase
+        FirebaseApp.configure()
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
+        
+        currentUser = Auth.auth().currentUser
         return true
+    }
+    
+    func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any])
+        -> Bool {
+            return GIDSignIn.sharedInstance().handle(url,
+                                                     sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                     annotation: [:])
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -43,6 +59,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
+    
+    func moveToHomeScreen() {
+        let mainStoryBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeViewController: UIViewController = mainStoryBoard.instantiateViewController(withIdentifier: "HomeVC")
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let currentViewController = appDelegate.window?.rootViewController
+        appDelegate.window?.rootViewController = homeViewController
+        currentViewController?.present(homeViewController, animated: true, completion: nil)
+    }
+    
 
     // MARK: - Core Data stack
 
@@ -89,5 +115,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-}
 
+}

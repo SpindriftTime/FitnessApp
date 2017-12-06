@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		9997D97F1FD7ABA700BA1D8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997D97E1FD7ABA700BA1D8F /* AppDelegate.swift */; };
-		9997D9811FD7ABA700BA1D8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997D9801FD7ABA700BA1D8F /* ViewController.swift */; };
+		9997D9811FD7ABA700BA1D8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997D9801FD7ABA700BA1D8F /* LoginViewController.swift */; };
 		9997D9841FD7ABA700BA1D8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9997D9821FD7ABA700BA1D8F /* Main.storyboard */; };
-		9997D9871FD7ABA700BA1D8F /* FinalFitnessApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9997D9851FD7ABA700BA1D8F /* FinalFitnessApp.xcdatamodeld */; };
 		9997D9891FD7ABA700BA1D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9997D9881FD7ABA700BA1D8F /* Assets.xcassets */; };
 		9997D98C1FD7ABA700BA1D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9997D98A1FD7ABA700BA1D8F /* LaunchScreen.storyboard */; };
+		9997D9941FD7AE8D00BA1D8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9997D9931FD7AE8D00BA1D8F /* GoogleService-Info.plist */; };
+		9997D9971FD7AFA500BA1D8F /* AppDelegat + GoogleSignin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997D9961FD7AFA500BA1D8F /* AppDelegat + GoogleSignin.swift */; };
+		9997D99C1FD7C8D900BA1D8F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997D99B1FD7C8D900BA1D8F /* HomeViewController.swift */; };
+		9997D99E1FD7C92F00BA1D8F /* LaunchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997D99D1FD7C92F00BA1D8F /* LaunchingViewController.swift */; };
+		9997D9A01FD7CED800BA1D8F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997D99F1FD7CED800BA1D8F /* UserDefaults.swift */; };
+		9997D9A21FD7DB4700BA1D8F /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9997D9A11FD7DB4700BA1D8F /* ViewControllerExtension.swift */; };
+		DB40752BE57639C8BAFFEE6A /* Pods_FinalFitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782EBEB0F5727FDE7CDB6E13 /* Pods_FinalFitnessApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C937451BF4397C0A55807E3 /* Pods-FinalFitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalFitnessApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalFitnessApp/Pods-FinalFitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
+		782EBEB0F5727FDE7CDB6E13 /* Pods_FinalFitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalFitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9997D97B1FD7ABA700BA1D8F /* FinalFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9997D97E1FD7ABA700BA1D8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9997D9801FD7ABA700BA1D8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9997D9801FD7ABA700BA1D8F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9997D9831FD7ABA700BA1D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9997D9861FD7ABA700BA1D8F /* FinalFitnessApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinalFitnessApp.xcdatamodel; sourceTree = "<group>"; };
 		9997D9881FD7ABA700BA1D8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9997D98B1FD7ABA700BA1D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9997D98D1FD7ABA700BA1D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9997D9931FD7AE8D00BA1D8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9997D9961FD7AFA500BA1D8F /* AppDelegat + GoogleSignin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegat + GoogleSignin.swift"; sourceTree = "<group>"; };
+		9997D99B1FD7C8D900BA1D8F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9997D99D1FD7C92F00BA1D8F /* LaunchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchingViewController.swift; sourceTree = "<group>"; };
+		9997D99F1FD7CED800BA1D8F /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		9997D9A11FD7DB4700BA1D8F /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		C81AD0AC2E035283363BF2B3 /* Pods-FinalFitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalFitnessApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalFitnessApp/Pods-FinalFitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB40752BE57639C8BAFFEE6A /* Pods_FinalFitnessApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				9997D97D1FD7ABA700BA1D8F /* FinalFitnessApp */,
 				9997D97C1FD7ABA700BA1D8F /* Products */,
+				B8DB300CE2BDA22F84418859 /* Pods */,
+				AE6401496F53350DF84878AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,53 @@
 		9997D97D1FD7ABA700BA1D8F /* FinalFitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				9997D9951FD7AF7400BA1D8F /* Extensions */,
 				9997D97E1FD7ABA700BA1D8F /* AppDelegate.swift */,
-				9997D9801FD7ABA700BA1D8F /* ViewController.swift */,
+				9997D9981FD7BE7A00BA1D8F /* ViewControllers */,
 				9997D9821FD7ABA700BA1D8F /* Main.storyboard */,
+				9997D9931FD7AE8D00BA1D8F /* GoogleService-Info.plist */,
+				9997D99F1FD7CED800BA1D8F /* UserDefaults.swift */,
 				9997D9881FD7ABA700BA1D8F /* Assets.xcassets */,
 				9997D98A1FD7ABA700BA1D8F /* LaunchScreen.storyboard */,
 				9997D98D1FD7ABA700BA1D8F /* Info.plist */,
-				9997D9851FD7ABA700BA1D8F /* FinalFitnessApp.xcdatamodeld */,
 			);
 			path = FinalFitnessApp;
+			sourceTree = "<group>";
+		};
+		9997D9951FD7AF7400BA1D8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9997D9961FD7AFA500BA1D8F /* AppDelegat + GoogleSignin.swift */,
+				9997D9A11FD7DB4700BA1D8F /* ViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9997D9981FD7BE7A00BA1D8F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9997D9801FD7ABA700BA1D8F /* LoginViewController.swift */,
+				9997D99D1FD7C92F00BA1D8F /* LaunchingViewController.swift */,
+				9997D99B1FD7C8D900BA1D8F /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AE6401496F53350DF84878AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				782EBEB0F5727FDE7CDB6E13 /* Pods_FinalFitnessApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8DB300CE2BDA22F84418859 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C937451BF4397C0A55807E3 /* Pods-FinalFitnessApp.debug.xcconfig */,
+				C81AD0AC2E035283363BF2B3 /* Pods-FinalFitnessApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9997D9901FD7ABA700BA1D8F /* Build configuration list for PBXNativeTarget "FinalFitnessApp" */;
 			buildPhases = (
+				78489C51B70E25C7D05BB22F /* [CP] Check Pods Manifest.lock */,
 				9997D9771FD7ABA700BA1D8F /* Sources */,
 				9997D9781FD7ABA700BA1D8F /* Frameworks */,
 				9997D9791FD7ABA700BA1D8F /* Resources */,
+				05467D475412A03E6874049D /* [CP] Embed Pods Frameworks */,
+				F6D85FF723586B09FB752E7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9997D98C1FD7ABA700BA1D8F /* LaunchScreen.storyboard in Resources */,
+				9997D9941FD7AE8D00BA1D8F /* GoogleService-Info.plist in Resources */,
 				9997D9891FD7ABA700BA1D8F /* Assets.xcassets in Resources */,
 				9997D9841FD7ABA700BA1D8F /* Main.storyboard in Resources */,
 			);
@@ -134,14 +193,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05467D475412A03E6874049D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FinalFitnessApp/Pods-FinalFitnessApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinalFitnessApp/Pods-FinalFitnessApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78489C51B70E25C7D05BB22F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinalFitnessApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6D85FF723586B09FB752E7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FinalFitnessApp/Pods-FinalFitnessApp-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FinalFitnessApp/Pods-FinalFitnessApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9997D9771FD7ABA700BA1D8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9997D9811FD7ABA700BA1D8F /* ViewController.swift in Sources */,
-				9997D9871FD7ABA700BA1D8F /* FinalFitnessApp.xcdatamodeld in Sources */,
+				9997D9811FD7ABA700BA1D8F /* LoginViewController.swift in Sources */,
+				9997D9971FD7AFA500BA1D8F /* AppDelegat + GoogleSignin.swift in Sources */,
+				9997D9A21FD7DB4700BA1D8F /* ViewControllerExtension.swift in Sources */,
+				9997D9A01FD7CED800BA1D8F /* UserDefaults.swift in Sources */,
+				9997D99E1FD7C92F00BA1D8F /* LaunchingViewController.swift in Sources */,
 				9997D97F1FD7ABA700BA1D8F /* AppDelegate.swift in Sources */,
+				9997D99C1FD7C8D900BA1D8F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +402,7 @@
 		};
 		9997D9911FD7ABA700BA1D8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C937451BF4397C0A55807E3 /* Pods-FinalFitnessApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +418,7 @@
 		};
 		9997D9921FD7ABA700BA1D8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C81AD0AC2E035283363BF2B3 /* Pods-FinalFitnessApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,19 +454,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9997D9851FD7ABA700BA1D8F /* FinalFitnessApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9997D9861FD7ABA700BA1D8F /* FinalFitnessApp.xcdatamodel */,
-			);
-			currentVersion = 9997D9861FD7ABA700BA1D8F /* FinalFitnessApp.xcdatamodel */;
-			path = FinalFitnessApp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9997D9731FD7ABA700BA1D8F /* Project object */;
 }

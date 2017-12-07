@@ -13,6 +13,8 @@ import GoogleSignIn
 
 var currentUser: User?
 
+var ref: DatabaseReference!
+
 extension AppDelegate : GIDSignInDelegate {
     
     
@@ -36,7 +38,11 @@ extension AppDelegate : GIDSignInDelegate {
             // sets user to the variable we defined at the top of page provided by firebase
             print("User Logged In")
             currentUser = Auth.auth().currentUser
+            ref = Database.database().reference()
+            
+                
             self.moveToHomeScreen()
+                
 
         }
     }

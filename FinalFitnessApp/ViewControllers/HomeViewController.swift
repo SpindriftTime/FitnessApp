@@ -24,6 +24,7 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     func moveToLogin() {
         let mainStoryBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController: UIViewController = mainStoryBoard.instantiateViewController(withIdentifier: "LoginVC")
@@ -32,6 +33,8 @@ class HomeViewController: UIViewController {
         appDelegate.window?.rootViewController = loginViewController
         currentViewController?.present(loginViewController, animated: true, completion: nil)
     }
+    
+    // function to log out
     func firebaseLogOut() {
         if currentUser != nil {
             let firebaseAuth = Auth.auth()
@@ -54,10 +57,10 @@ class HomeViewController: UIViewController {
                 try firebaseAuth.signOut()
                 currentUser = nil
                 print("Sign Out Successful")
+                self.moveToLogin()
             } catch let signOutError {
                 print ("Error signing out: \(signOutError)")
             }
         }
-        self.moveToLogin()
     }
 }

@@ -23,13 +23,20 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     
     @IBAction func TouchGoogle(_ sender: GIDSignInButton) {
-        if currentUser != nil {
-            let HomeViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController
-            
-            self.navigationController?.pushViewController(HomeViewController, animated: true)
-    }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
+            OurDefaults.shared.loadUserDefaults()
+            })
+        
     }
     
+    func sendToFirstScreen(screen: UIViewController) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = screen
+        self.present(screen, animated: true, completion: nil)
+    }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
